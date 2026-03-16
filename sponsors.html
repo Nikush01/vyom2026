@@ -66,6 +66,34 @@
   display: none;
 }
 
+/* ===== GLASS NAVBAR (ADDED) ===== */
+#navbar {
+  background: rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+#navbar.scrolled {
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+}
+#navbar .nav-links a,
+#navbar .nav-cta {
+  color: #fff;
+}
+#navbar .nav-links a:hover,
+#navbar .nav-cta:hover {
+  color: var(--pink);
+}
+#navbar .hamburger span {
+  background: #fff;
+}
+.nav-logo-img {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
 .tier-label {
   font-family:'Orbitron',monospace; font-size:0.62rem; color:var(--pink);
   letter-spacing:5px; text-transform:uppercase; margin:3rem 0 1.5rem;
